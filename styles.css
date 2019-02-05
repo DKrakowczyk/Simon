@@ -29,6 +29,11 @@ body {
   -webkit-box-shadow: inset 0px 0px 38px 1px rgba(0,0,0,0.56);
   box-shadow: inset 0px 0px 38px 1px rgba(0,0,0,0.56);
 }
+.description{
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
 
 .game-over {
   background-color: #967f8F;

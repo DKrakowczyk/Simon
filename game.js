@@ -7,6 +7,7 @@ var level = 0;
 $(document).keypress(function(event) {
   if (level == 0) {
     nextSequence();
+    $("#desc").fadeOut();
   }
 });
 
@@ -31,6 +32,29 @@ function nextSequence() {
   console.log(randomChosenColour);
   level++;
   $("#level-title").text("Level " + level);
+  if(level>5){
+  $("#level-title").css("color","#6D7993");
+  $(".description").text("GOOD");
+  $("#desc").fadeIn();
+
+  }
+  if(level>10){
+  $("#desc").fadeOut();
+  $("#level-title").css("color","#96858F");
+  $(".description").text("AMAZING");
+  $("#desc").fadeIn();
+
+  }
+  if(level>20){
+  $("#desc").fadeOut();
+  $("#level-title").css("color","#000");
+  $(".description").text("FLAWLESS");
+  $("#desc").fadeIn();
+
+  }
+  else{
+    $("#level-title").css("color","#FFF");
+  }
 }
 
 function playSound(button) {
@@ -91,7 +115,7 @@ function checkAnser(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("game-over");
     }, 200);
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text("Game Over,Press Any Key to Restart");
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
@@ -99,7 +123,7 @@ function checkAnser(currentLevel) {
   if (currentLevel == gamePattern.length) {
 
     if (success) {
-      setTimeout(nextSequence, 500);
+      setTimeout(nextSequence, 700);
 
       userClickedPattern = [];
     }
