@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+  background-color: #D5D5D5;
+  transition: border-radius 0.3s ease-in;
+}
+
+.level-title {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  color: #FFF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  transition: border-radius 0.3s ease-in;
+  -webkit-box-shadow: inset 0px 0px 38px 1px rgba(0,0,0,0.56);
+  box-shadow: inset 0px 0px 38px 1px rgba(0,0,0,0.56);
+}
+
+.game-over {
+  background-color: #967f8F;
+}
+
+.red {
+  background-color: #96858F;
+}
+.red:hover{
+  background-color: #967f8d;
+
+}
+.green {
+  background-color: #6D7993;
+}
+.green:hover{
+  background-color: #62708e;
+
+}
+.blue {
+  background-color: #9099A2;
+}
+.blue:hover{
+  background-color: #8b98a5;
+
+}
+.yellow {
+  background-color: #bca793;
+}
+.yellow:hover{
+  background-color: #bfa389;
+
+}
+.pressed {
+  transition: border-radius 0.1s ease-in;
+  border-radius:150px;
+}
