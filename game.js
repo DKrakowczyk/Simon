@@ -9,12 +9,12 @@ $(document).keypress(function(event) {
     nextSequence();
   }
 });
-
-$(window).touchstart(function(event) {
+window.addEventListener('touchstart', function() {
   if (level == 0) {
     nextSequence();
   }
 });
+
 
 $(".btn").click(function() {
   if (level > 0) {
