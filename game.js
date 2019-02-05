@@ -10,6 +10,11 @@ $(document).keypress(function(event) {
   }
 });
 
+$(window).touchstart(function(event) {
+  if (level == 0) {
+    nextSequence();
+  }
+});
 
 $(".btn").click(function() {
   if (level > 0) {
