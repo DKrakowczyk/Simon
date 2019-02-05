@@ -11,7 +11,12 @@ $(document).keypress(function(event) {
   }
 });
 
-
+window.addEventListener('touchstart', function () {
+  if (level == 0) {
+    nextSequence();
+    $("#desc").fadeOut();
+  }
+});
 
 $(".btn").click(function() {
   if (level > 0) {
@@ -123,6 +128,7 @@ function checkAnser(currentLevel) {
   if (currentLevel == gamePattern.length) {
 
     if (success) {
+
       setTimeout(nextSequence, 700);
 
       userClickedPattern = [];
