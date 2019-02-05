@@ -9,11 +9,7 @@ $(document).keypress(function(event) {
     nextSequence();
   }
 });
-window.addEventListener('touchstart', function() {
-  if (level == 0) {
-    nextSequence();
-  }
-});
+
 
 
 $(".btn").click(function() {
