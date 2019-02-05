@@ -36,32 +36,32 @@ function playSound(button) {
   var audio;
   switch (button) {
     case "red":
-      audio = new Audio("sounds/1.wav");
+      audio = new Audio("sounds/1.mp3");
       audio.play();
       break;
 
     case "green":
-      audio = new Audio("sounds/2.wav");
+      audio = new Audio("sounds/2.mp3");
       audio.play();
       break;
 
     case "yellow":
-      audio = new Audio("sounds/3.wav");
+      audio = new Audio("sounds/3.mp3");
       audio.play();
       break;
 
     case "blue":
-      audio = new Audio("sounds/4.wav");
+      audio = new Audio("sounds/4.mp3");
       audio.play();
       break;
 
     case "bad":
-      audio = new Audio("sounds/bad.wav");
+      audio = new Audio("sounds/bad.mp3");
       audio.play();
       break;
-      
+
     default:
-      audio = new Audio("sounds/bad.wav");
+      audio = new Audio("sounds/bad.mp3");
       audio.play();
   }
 }
